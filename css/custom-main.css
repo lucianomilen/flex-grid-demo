@@ -1,0 +1,63 @@
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.demo-grid-btn{
+
+}
+
+.flex-wrap{
+    display: flex;
+}
+
+.flex-item{
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-family:'Kavivanar', cursive;
+}
+
+.flex-item:first-child{
+    background: rgba(100,50,25,0.75);
+}
+
+.flex-item:last-child{
+    background: rgba(124, 126, 255, 0.75);
+}
+
+.flex-item:hover{
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+}
+
+a > p {
+    padding: 50px;
+}
