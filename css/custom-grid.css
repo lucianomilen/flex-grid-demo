@@ -134,6 +134,7 @@ ul {
     .content-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 2fr 2fr;
+
     }
     .widget-grid.box-widget.rg{
         grid-column: 2/3;
@@ -153,10 +154,22 @@ ul {
 }
 
 @media (max-width: 500px){
+    .menu-list > li{
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
     .grid-demo{
-        grid-template-areas: "logo links"
-        "aside aside"
-        "content";
+        grid-template-areas: "logo links" "aside aside" "content content";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+    }
+    aside.aside-grid{
+        grid-column: 1/3;
+    }
+    .content-grid{
+        grid-column: 1/3;
+        grid-row: 3/4;
     }
 }
 
@@ -168,4 +181,8 @@ ul {
 .box-widget-container{
     margin:auto;
     border: 1px solid black;
+}
+
+.widget-grid > img {
+    max-width: 57vw;
 }

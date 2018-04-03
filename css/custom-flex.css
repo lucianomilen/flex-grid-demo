@@ -42,7 +42,7 @@ ul {
 
 .aside-flex{
     flex: 1;
-    height: 100vh;
+    height: 87vh;
     background: lightcoral;
     max-width: 200px;
 }
@@ -92,18 +92,34 @@ ul {
 }
 
 .widget-flex.box-widget{
-    height: 200px;
+    align-self: center;
 }
 
 .widget-flex.rg{
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+    height: 200px;
+
 }
 
 .widget-flex.sm{
     font-size: 1vw;
     width: 200px;
+    height: 50px;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.widget-flex.sm:not(.flex-text){
+    background: lightgrey;
+    align-self: flex-end;
 }
 
 .widget-flex.bg{
-    width: 500px;
+    max-width: 500px;
+    width:100%;
+    height: 400px;
+    background: lightcyan;
 }
